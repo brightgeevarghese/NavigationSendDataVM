@@ -15,8 +15,7 @@ import edu.miu.navsenddatavm.ui.screens.ScreenOne
 import edu.miu.navsenddatavm.ui.screens.ScreenTwo
 
 @Composable
-fun AppNavigation(viewModel: SharedViewModel) {
-    var navHostController: NavHostController = rememberNavController()
+fun AppNavigation(navHostController: NavHostController, viewModel: SharedViewModel) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = { AppBar(modifier = Modifier, navHostController) }
