@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NavSendDataParcelable"
+rootProject.name = "NavSendDataViewModel"
 include(":app")

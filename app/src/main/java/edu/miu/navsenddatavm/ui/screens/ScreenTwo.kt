@@ -30,7 +30,7 @@ fun ScreenTwo(navController: NavController, modifier: Modifier, viewModel: Share
                 Text(text = "Error: ${studentUiState.error}")
             }
             else -> {
-                Text(text = "Student : $studentUiState")
+                Text(text = "Student : ${studentUiState.student}")
             }
         }
         Button(onClick = { navController.popBackStack(navController.graph.startDestinationId, false) }) {
